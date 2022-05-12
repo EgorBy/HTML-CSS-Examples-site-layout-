@@ -1,0 +1,450 @@
+@import "_variables";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lato", sans-serif;
+}
+
+.none {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: inline;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    height: 74px;
+    background-color: #222222;
+    padding: 18px 16px;
+    box-sizing: border-box;
+
+    @media (min-width: 768px) {
+        padding: 18px 32px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .lable {
+        color: #e8e8e8;
+    }
+
+    .lableSearch {
+        margin-left: 41px;
+    }
+
+    .lableBasketWrap {
+        position: relative;
+
+        span {
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            color: white;
+            background-color: $majorColor;
+            border-radius: 50%;
+            font-size: 12px;
+            position: absolute;
+            text-align: center;
+            font-style: normal;
+            font-weight: normal;
+            top: -22px;
+            left: 27px;
+        }
+    }
+    .lablePerson {
+        @media (min-width: 768px) {
+            margin-left: 25px;
+            margin-right: 42px;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        margin: 0 auto;
+        width: 1140px;
+    }
+}
+
+.MainTitle {
+    min-height: 148px;
+    background: #f8f3f4;
+
+    .container {
+        display: flex;
+        min-height: inherit;
+        align-items: center;
+        justify-content: center;
+
+        @media (min-width: 768px) {
+            justify-content: flex-start;
+        }
+
+        @media (min-width: 768px) and (max-width: 1599px) {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+    }
+
+    h1 {
+        margin: 0px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28.8px;
+        color: $majorColor;
+    }
+}
+
+.registration {
+    margin-top: 40px;
+
+    @media (max-width: 767px) {
+        padding: 0 8px;
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 16px;
+    }
+
+    @media (min-width: 1600px) {
+        margin-top: 64px;
+    }
+    .registrationNameLabel {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+
+    .registrationInput {
+        border: 1px solid #a4a4a4;
+        height: 44px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 16px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #b1b1b1;
+        margin-top: 19px;
+
+        &::-webkit-input-placeholder {
+            font-family: inherit;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #b1b1b1;
+        }
+
+        &::-moz-placeholder {
+            font-family: inherit;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #b1b1b1;
+        }
+
+        &:-ms-input-placeholder {
+            font-family: inherit;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #b1b1b1;
+        }
+
+        &:-moz-placeholder {
+            font-family: inherit;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #b1b1b1;
+        }
+    }
+
+    .registrationGender {
+        display: flex;
+        align-items: center;
+        margin-top: 31px;
+        margin-bottom: 33px;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #000;
+
+        input {
+            margin-right: 10px;
+
+            &:not(:first-of-type) {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .registrationLoginLabel {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+
+    .registrationText {
+        margin-top: 15px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #b1b1b1;
+    }
+
+    .registrationButton {
+        margin-top: 39px;
+        width: 167px;
+        height: 50px;
+        background-color: $majorColor;
+        border: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+
+        img {
+            margin-left: 20px;
+        }
+    }
+
+    .registrationRight {
+        max-width: 652px;
+        margin-top: 40px;
+
+        @media (min-width: 768px) {
+            margin-top: 0px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1599px) {
+            margin-left: 22px;
+        }
+
+        @media (min-width: 1600px) {
+            margin-left: 128px;
+        }
+
+        .registrationRightText {
+            margin-top: 32px;
+        }
+
+        .registrationRightTitle,
+        .registrationRightText,
+        .registrationRightList {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+
+            @media (min-width: 1600px) {
+                font-size: 24px;
+                line-height: 29px;
+            }
+        }
+        .registrationRightList {
+            margin-top: 21px;
+            padding: 0px;
+            list-style-type: none;
+
+            li {
+                background: url(#{$imagesPath}/registration/ListType.svg) no-repeat;
+                padding-left: 42px;
+
+                &:not(:first-child) {
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}
+
+.subscribe {
+    background: url(../img/subscribe/photosubscribe.png) no-repeat;
+    background-size: cover;
+    padding-top: 64px;
+    padding-bottom: 109px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 96px;
+
+    @media (min-width: 1200px) {
+        padding-top: 97px;
+        padding-bottom: 126px;
+    }
+
+    @media (min-width: 768px) {
+        margin-top: 128px;
+    }
+
+    .container {
+        @media (min-width: 1200px) {
+            margin: 0 auto;
+            width: 1140px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .subscribeLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .subscribeUserText {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 22px;
+            color: #222224;
+            max-width: 330px;
+        }
+    }
+
+    .subscribeRight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 65px;
+
+        @media (min-width: 1200px) {
+            margin-top: initial;
+        }
+
+        .subscribeTitle {
+            font-weight: 700;
+            font-size: 24px;
+            color: #222224;
+        }
+
+        .subscribeTitle,
+        .subscribeText {
+            max-width: 271px;
+            text-align: center;
+        }
+
+        .subscribeText {
+            font-size: 14px;
+            color: #222224;
+            margin-bottom: 22px;
+        }
+
+        .subscribeForm {
+            height: 47px;
+
+            input {
+                height: inherit;
+                background: #e1e1e1;
+                border: none;
+                padding: 6px 21px;
+                box-sizing: border-box;
+                border-top-left-radius: 28px;
+                border-bottom-left-radius: 28px;
+                float: left;
+                width: 185px;
+
+                &::-webkit-input-placeholder {
+                    color: #222224;
+                    font-family: inherit;
+                    opacity: 0.67;
+                }
+
+                &::-moz-placeholder {
+                    color: #222224;
+                    font-family: inherit;
+                    opacity: 0.67;
+                }
+
+                &:-ms-input-placeholder {
+                    color: #222224;
+                    font-family: inherit;
+                    opacity: 0.67;
+                }
+
+                &:-moz-placeholder {
+                    color: #222224;
+                    font-family: inherit;
+                    opacity: 0.67;
+                }
+            }
+
+            button {
+                height: inherit;
+                border: none;
+                color: white;
+                font-family: inherit;
+                font-size: 14px;
+                line-height: 17px;
+                background: $majorColor;
+                border-top-right-radius: 28px;
+                border-bottom-right-radius: 28px;
+                padding: 0 17px;
+            }
+        }
+    }
+}
+
+.footer {
+    background: #222224;
+    padding: 43px 20px 10px;
+
+    @media (min-width: 768px) {
+        padding: 24px 32px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 768px) {
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    a {
+        color: black;
+        background-color: white;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        &:not(:last-child) {
+            margin-right: 7px;
+        }
+
+        &:hover {
+            background: $majorColor;
+            color: white;
+        }
+    }
+
+    .footerLeft {
+        display: flex;
+    }
+
+    .footerRight {
+        margin-top: 40px;
+        color: white;
+    }
+}
